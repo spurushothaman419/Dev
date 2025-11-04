@@ -1,0 +1,19 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/quantum_auth_secure/requirements.txt b/quantum_auth_secure/requirements.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..f6cd116a3d132535953afb504bab3efb0649b84b
+--- /dev/null
++++ b/quantum_auth_secure/requirements.txt
+@@ -0,0 +1,9 @@
++fastapi
++uvicorn
++argon2-cffi
++srptools
++pqcrypto
++jinja2
++python-multipart
++webauthn
++pycryptodome
+ 
+EOF
+)
