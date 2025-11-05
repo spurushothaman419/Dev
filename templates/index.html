@@ -1,10 +1,4 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/quantum_auth_secure/templates/index.html b/quantum_auth_secure/templates/index.html
-new file mode 100644
-index 0000000000000000000000000000000000000000..6f50719139b5e5e5588a8a8003f22d0f45d217f4
---- /dev/null
-+++ b/quantum_auth_secure/templates/index.html
-@@ -0,0 +1,30 @@
+
 +<!DOCTYPE html>
 +<html>
 +<head>
@@ -35,6 +29,4 @@ index 0000000000000000000000000000000000000000..6f50719139b5e5e5588a8a8003f22d0f
 +{% endif %}
 +</body>
 +</html>
- 
-EOF
-)
+
